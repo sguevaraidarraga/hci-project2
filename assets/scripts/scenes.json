@@ -1,0 +1,64 @@
+{
+  "scenes": [
+    {
+      "id": 0,
+      "text": "Bienvenido al festival macadamia, vas a encontrar arte, música y buena comida por este lugar.\nPero espera, ¿dónde está el sonido?\n¿Escuchás algo a la izquierda?",
+      "audio": null,
+      "options": [
+        {"text": "Ir a la izquierda", "next_id": 1}
+      ]
+    },
+    {
+      "id": 1,
+      "text": "Es un puesto de comida de salchipapa! Te comes la salchipapa, pero ahora escuchas algo, un sonido metálico a bajo volumen.",
+      "audio": "YouTube: fritura",
+      "options": [
+        {"text": "Acercarte al sonido metálico", "next_id": 2}
+      ]
+    },
+    {
+      "id": 2,
+      "text": "El sonido se empieza a escuchar más fuerte… Ves la entrada a un salón cerrado. ¿Decides entrar?",
+      "audio": "Canción: I Hate Models",
+      "options": [
+        {"text": "Sí, entrar", "next_id": 3},
+        {"text": "No, no entrar", "next_id": 4}
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Entraste a una rave de techo, pero en la entrada te detienen, al parecer no pagaste la entrada al festival. Te dan un buen golpe.",
+      "audio": "Sonido: apertura de puertas",
+      "options": []
+    },
+    {
+      "id": 4,
+      "text": "Te acabas de encontrar a un misterioso sujeto de color azul. Sientes una extraña presencia en él, como si con solo estar cerca sintieras el sonido del mar.\nSe escuchan unos pasos… ¿Quieres seguirlo?",
+      "audio": "Sonido del mar",
+      "options": [
+        {"text": "Sí, seguirlo", "next_id": 5}
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Decides seguirlo, pasas por todo el festival. Empiezas escuchando un bajo suave por la derecha, luego rap, después gritos y euforia por detrás. Se escucha un sonido de house melancólico (Haze the Blaze). Sientes aplausos, gritos, y de repente escuchas el mar azul. ¿Quieres despertar o no?",
+      "audio": "Secuencia de sonidos: bajo, rap, gritos, house, mar",
+      "options": [
+        {"text": "Sí, despertar", "next_id": 6},
+        {"text": "No, no despertar", "next_id": 7}
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Eres el artista. Ves al público al frente mientras suena 'Not in Love' de Crystal Castles. Casi no escuchas tu música, pero ves a la gente feliz y eso te alegra.",
+      "audio": "Not in Love - Crystal Castles",
+      "options": []
+    },
+    {
+      "id": 7,
+      "text": "Escuchás 'Come Together' de The Beatles de fondo. A la izquierda se oye una obra de construcción, y al caminar un poco escuchas autos: estás en Abbey Road.",
+      "audio": "Come Together - The Beatles",
+      "options": []
+    }
+  ]
+}
