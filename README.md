@@ -1,11 +1,7 @@
-# Macadamia Festival - Interactive Audio Text Adventure
+# Macadamia Festival
 
 ## Authors
-- Santiago [Last Name]  
-- [Teammate Name, if applicable]  
-
-Pontificia Universidad Javeriana – Cali, Colombia  
-Course: Sistemas de Interacción – Miniproject 2  
+- 
 
 ---
 
