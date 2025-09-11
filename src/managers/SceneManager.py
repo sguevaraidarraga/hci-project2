@@ -1,5 +1,5 @@
 from sys import stdin
-
+from utils.SoundManager import SoundManager
 class SceneManager:
 	def __init__(self, scenes: dict):
 		self.scenes = scenes
@@ -11,6 +11,10 @@ class SceneManager:
 			print("\n" + scene.text)
 
 			# audio
+			self.sound_manager = SoundManager()
+
+			if scene.audio: 
+				self.sound_manager.play(scene.audio)
 
 			if not scene.options:
 				break
