@@ -1,5 +1,7 @@
 # Azul Macadamia
 
+[Video](https://javerianacaliedu-my.sharepoint.com/:v:/g/personal/juango26_javerianacali_edu_co/EXe2jwVPiXtGmX5CEdb1r1QBGVtylCjd4OW3ederjvI7sg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=9jb4QM)
+
 ## Authors
 - Juan David Vasquez Pomar
 - Santiago Guevara Idarraga
