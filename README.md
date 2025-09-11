@@ -1,12 +1,13 @@
-# Macadamia Festival
+# Azul Macadamia
 
 ## Authors
-- 
+- Juan David Vasquez Pomar
+- Santiago Guevara Idarraga
 
 ---
 
 ## Project Description
-This project is a **text-based interactive game** inspired by *Zork*.
+**Azul Macadamia** is a **text-based interactive adventure game** inspired by Zork.
 The narrative is accompanied by **diegetic and spatialized sounds**, using **OpenAL** for 3D audio rendering.
 The objective is to create an **immersive auditory world** where the player advances through the story by reading line by line and making decisions.
 
@@ -60,8 +61,10 @@ We chose this modular, JSON-driven architecture because:
 ```bash
 # Create and activate virtual environment
 python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
+
+# Activate virtual enviroment
+source venv/bin/activate   # Linux/macOS
+venv\Scripts\activate      # Windows
 
 # Install dependencies
 pip install -r requirements.txt
@@ -69,6 +72,7 @@ pip install -r requirements.txt
 # Run the game
 python src/main.py
 ```
+
 ## License
 
 This project was developed for academic purposes in the course Sistemas de Interacción.
