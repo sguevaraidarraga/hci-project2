@@ -3,7 +3,7 @@
     {
       "id": 0,
       "text": "Bienvenido al festival macadamia, lleno de arte, música y comida.\nPero algo está mal... el sonido parece apagado, distante.\n¿Escuchas ese extraño sonido metálico a la izquierda?",
-      "audio": "intro",
+      "audio": ["intro", "ambiente"],
       "options": [
         {"text": "Ir a la izquierda hacia el sonido", "next_id": 1},
         {"text": "Explorar el festival principal", "next_id": 15}
@@ -12,7 +12,7 @@
     {
       "id": 1,
       "text": "Encuentras un puesto de salchipapas con un vendedor nervioso.\nTe ofrece comida gratis si 'no has visto nada raro'.\nEl sonido metálico se hace más fuerte desde una entrada oculta.",
-      "audio": "fritura",
+      "audio": ["fritura", "intro_lejano", "misterio"],
       "options": [
         {"text": "Preguntarle al vendedor qué pasa", "next_id": 16},
         {"text": "Seguir el sonido hacia la entrada", "next_id": 2}
@@ -21,7 +21,7 @@
     {
       "id": 2,
       "text": "¡Es una rave secreta! La música techno subterránea retumba.\nVes una entrada oculta detrás de unas lonas marcada 'ZONA RESTRINGIDA'.\nSientes que aquí está la verdadera fiesta.",
-      "audio": "techno",
+      "audio": ["techno", "intro_muy_lejano", "ambiente_underground"],
       "options": [
         {"text": "Entrar por la entrada oculta", "next_id": 3},
         {"text": "Buscar otra forma de investigar", "next_id": 4}
@@ -30,7 +30,7 @@
     {
       "id": 3,
       "text": "Un guardia corpulento bloquea tu paso con autoridad.\n'Esta fiesta no es para turistas', dice con desdén.\n'¿Tienes invitación o buscas al contacto azul?'",
-      "audio": "puerta",
+      "audio": ["puerta", "techno_amortiguado", "guardia"],
       "options": [
         {"text": "Intentar colarte por la fuerza", "next_id": 8},
         {"text": "Preguntar por el 'contacto azul'", "next_id": 4}
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "text": "Encuentras a una figura misteriosa con ropa azul eléctrico.\nSus ojos brillan con conocimiento secreto. El sonido del océano lo envuelve.\n'Buscas la música real, ¿verdad? Puedo ayudarte, pero cuesta.'",
-      "audio": "mar",
+      "audio": ["mar", "misterio", "techno_distante"],
       "options": [
         {"text": "Aceptar su ayuda", "next_id": 5},
         {"text": "Desconfiar y alejarte", "next_id": 7}
@@ -48,7 +48,7 @@
     {
       "id": 5,
       "text": "El sujeto azul te lleva por pasillos ocultos del festival.\nOtro guardia aparece: 'Alto, necesitas pulsera VIP para esta zona'.\nEl sujeto azul susurra: 'Ahora demuestra tu astucia'.",
-      "audio": "guardia",
+      "audio": ["guardia", "susurro", "recorrido", "techno_eco"],
       "options": [
         {"text": "Inventar una historia convincente", "next_id": 10},
         {"text": "Ofrecer tu comida como soborno", "next_id": 11},
@@ -58,7 +58,7 @@
     {
       "id": 6,
       "text": "¡Eres el DJ principal! La multitud grita tu nombre.\nTe das cuenta de que todo este viaje fue para llegar aquí.\nLa música fluye a través de ti como nunca antes. Has encontrado tu lugar.",
-      "audio": "dj_set",
+      "audio": ["dj_set", "final_triunfo", "ambiente_multitud"],
       "options": [
         {"text": "Continuar el set triunfal", "next_id": 19},
         {"text": "Buscar al sujeto azul en la multitud", "next_id": 20}
@@ -67,7 +67,7 @@
     {
       "id": 7,
       "text": "Te alejas y caminas por una calle que se vuelve familiar.\nLa música cambia a algo nostálgico. Estás en Abbey Road.\n¿Cómo llegaste aquí? ¿Era todo un sueño extraordinario?",
-      "audio": "abbey_road",
+      "audio": ["abbey_road", "eco", "techno_fantasma"],
       "options": [
         {"text": "Intentar volver al festival", "next_id": 21},
         {"text": "Aceptar que fue un sueño", "next_id": 22}
@@ -76,7 +76,7 @@
     {
       "id": 8,
       "text": "Tu intento de colarte falla estrepitosamente.\nEl guardia te golpea y todo se vuelve negro.\nDespiertas confundido en el puesto de salchipapas con dolor de cabeza.",
-      "audio": "golpe",
+      "audio": ["golpe", "vacio", "intro_distorsionado"],
       "options": [
         {"text": "Intentar recordar qué pasó", "next_id": 23},
         {"text": "Empezar de nuevo más cuidadosamente", "next_id": 1}
@@ -85,7 +85,7 @@
     {
       "id": 10,
       "text": "Tu historia sobre ser un DJ invitado funciona.\nEl guardia duda, pero el sujeto azul confirma tu historia.\n'Es conmigo', dice con autoridad. Ambos pueden pasar.",
-      "audio": "exito",
+      "audio": ["exito", "recorrido", "techno_creciente"],
       "options": [
         {"text": "Agradecer al sujeto azul", "next_id": 25},
         {"text": "Preguntar quién es realmente", "next_id": 26}
@@ -94,7 +94,7 @@
     {
       "id": 11,
       "text": "Le ofreces tu salchipapa al guardia con una sonrisa.\n'¡Hace horas que no como!' La acepta agradecido.\n'Eres de los buenos. Pasa, pero mantente cerca del tipo azul'.",
-      "audio": "exito",
+      "audio": ["exito", "fritura_eco", "techno_creciente"],
       "options": [
         {"text": "Entrar con el sujeto azul", "next_id": 25}
       ]
@@ -102,7 +102,7 @@
     {
       "id": 15,
       "text": "Exploras el festival principal, pero todo parece artificial.\nLos artistas tocan sin pasión, la comida no tiene sabor.\nUn niño te señala: 'La música real está por allá, donde el sonido metálico'.",
-      "audio": "ambiente",
+      "audio": ["ambiente", "intro_artificial", "misterio_lejano"],
       "options": [
         {"text": "Seguir la sugerencia del niño", "next_id": 1},
         {"text": "Quedarte en la zona segura", "next_id": 27}
@@ -111,7 +111,7 @@
     {
       "id": 16,
       "text": "El vendedor mira nervioso a todos lados.\n'Hay gente que no quiere que sepas de la rave secreta', susurra.\n'Si quieres música verdadera, busca al que viste de azul'.",
-      "audio": "susurro",
+      "audio": ["susurro", "fritura_baja", "techno_susurrado"],
       "options": [
         {"text": "Buscar al 'que viste azul'", "next_id": 4}
       ]
@@ -119,7 +119,7 @@
     {
       "id": 18,
       "text": "El sujeto azul saca una pulsera dorada de su bolsillo.\n'Toma, pero recuerda que ahora me debes un favor'.\nEl guardia ve la pulsera y inmediatamente los deja pasar.",
-      "audio": "misterio",
+      "audio": ["misterio", "exito", "techno_revelacion"],
       "options": [
         {"text": "Aceptar la deuda y continuar", "next_id": 25}
       ]
@@ -127,19 +127,19 @@
     {
       "id": 19,
       "text": "Tu set es legendario. La multitud está extasiada.\nAl final, el sujeto azul aparece: 'Sabía que tenías talento'.\nTe das cuenta de que él organizó todo para encontrar al DJ perfecto.",
-      "audio": "final_triunfo",
+      "audio": ["final_triunfo", "dj_set_climax", "revelacion_final"],
       "options": []
     },
     {
       "id": 20,
       "text": "Buscas al sujeto azul mientras tocas.\nLo ves al fondo, sonriendo orgulloso. Te hace una seña.\nSientes que has cumplido una misión que no sabías que tenías.",
-      "audio": "final_triunfo",
+      "audio": ["final_triunfo", "mar_triunfante", "dj_set_emocional"],
       "options": []
     },
     {
       "id": 21,
       "text": "Intentas volver, pero las calles se transforman.\nEl festival era real, pero ahora estás en otra dimensión.\nPuedes escuchar la música a la distancia, como un eco de lo vivido.",
-      "audio": "eco",
+      "audio": ["eco", "techno_dimensional", "abbey_road_eco"],
       "options": [
         {"text": "Aceptar tu nueva realidad", "next_id": 22}
       ]
@@ -147,13 +147,13 @@
     {
       "id": 22,
       "text": "Aceptas que todo fue un sueño extraordinario.\nPero al llegar a casa, encuentras una pulsera dorada en tu bolsillo.\nLa música del festival aún resuena. ¿Fue realmente un sueño?",
-      "audio": "despertar",
-      "options": []
+      "audio": ["despertar", "intro_memoria", "misterio_final"],
+      "options": [{"text": "Aceptar tu nueva realidad", "next_id": 40}]
     },
     {
       "id": 23,
       "text": "Fragmentos de memoria regresan: la música, el sujeto azul.\nEl vendedor te cuenta que estuviste inconsciente, hablando de música.\n'Pero mira', dice, 'trajiste esto'. Te muestra una pulsera dorada.",
-      "audio": "revelacion",
+      "audio": ["revelacion", "fritura_confusa", "techno_memoria"],
       "options": [
         {"text": "Examinar la pulsera y reflexionar", "next_id": 22}
       ]
@@ -161,7 +161,7 @@
     {
       "id": 25,
       "text": "Caminas con el sujeto azul por pasillos de arte psicodélico.\n'Cada persona aquí tiene un talento único', explica.\n'Tu misión es descubrirlo antes de llegar al escenario principal'.",
-      "audio": "recorrido",
+      "audio": ["recorrido", "techno_transformacion", "mar_guia"],
       "options": [
         {"text": "Continuar hacia tu destino", "next_id": 6}
       ]
@@ -169,7 +169,7 @@
     {
       "id": 26,
       "text": "El sujeto azul te mira intensamente.\n'Soy un curador de talentos ocultos. Encuentro personas como tú,\nque tienen música en el alma pero no lo saben todavía'.",
-      "audio": "recorrido",
+      "audio": ["recorrido", "revelacion_profunda", "techno_alma"],
       "options": [
         {"text": "Aceptar tu destino musical", "next_id": 6}
       ]
@@ -177,7 +177,13 @@
     {
       "id": 27,
       "text": "Decides quedarte en la zona segura, pero la música suena vacía.\nLentamente, los sonidos se desvanecen y te quedas solo.\nSolo queda el eco de lo que pudiste haber experimentado.",
-      "audio": "vacio",
+      "audio": ["vacio", "ambiente_moribundo", "intro_fantasma"],
+      "options": []
+    },
+    {
+      "id": 40,
+      "text": "El despertar",
+      "audio": ["despertar", "eco_eterno"],
       "options": []
     }
   ]
