@@ -1,0 +1,1 @@
+SCENE_PATH = "assets/scripts/scenes.json"
